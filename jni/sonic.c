@@ -596,7 +596,7 @@ int sonicSamplesAvailable(
     return stream->numOutputSamples;
 }
 
-/* If skip is greater than one, average skip samples togther and write them to
+/* If skip is greater than one, average skip samples together and write them to
    the down-sample buffer.  If numChannels is greater than one, mix the channels
    together as we down sample. */
 static void downSampleInput(
@@ -662,7 +662,7 @@ static int findPitchPeriodInRange(
 }
 
 /* At abrupt ends of voiced words, we can have pitch periods that are better
-   aproximated by the previous pitch period estimate.  Try to detect this case.  */
+   approximated by the previous pitch period estimate.  Try to detect this case.  */
 static int prevPeriodBetter(
     sonicStream stream,
     int period,
@@ -810,7 +810,7 @@ static void overlapAddWithSeparation(
     }
 }
 
-/* Just move the new samples in the output buffer to the pitch bufer */
+/* Just move the new samples in the output buffer to the pitch buffer */
 static int moveNewSamplesToPitchBuffer(
     sonicStream stream,
     int originalNumOutputSamples)
